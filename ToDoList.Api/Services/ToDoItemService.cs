@@ -20,6 +20,7 @@ namespace ToDoList.Core.Services
         public async Task<IEnumerable<ToDoItem>> GetAllTasks()
         {
             return await _db.Tasks.ToListAsync();
+
         }
         
         public async Task<IEnumerable<ToDoItem>> GetIncompleteTasks()
